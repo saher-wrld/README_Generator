@@ -1,16 +1,15 @@
 // TODO: Include packages needed for this application
-// import fs from "fs"; 
-import { writeFile } from 'fs/promises';
+// import { writeFile } from 'fs/promises';
 
+import fs from "fs"; 
 import inquirer from "inquirer";
-
 import generateMarkdown from './utils/generateMarkdown.js';
+import path from "path";
 
 // TODO: Create an array of questions for user input
 // const questions = [];
 //
-const questions =() => {
-    return inquirer.prompt([
+const questions = [
           {
             type: 'input',
             name: 'username',
@@ -23,8 +22,8 @@ const questions =() => {
           },
           {
             type: 'input',
-            name: 'projectName',
-            message: 'What is your projects name?',
+            name: 'title',
+            message: 'What is your project`s name?',
           },
           {
             type: 'input',
@@ -39,35 +38,51 @@ const questions =() => {
           },
           {
             type: 'input',
-            name: 'question1',
+            name: 'installation',
             message: 'What command should be run to install dependencies?',
           },
           {
             type: 'input',
-            name: 'question2',
+            name: 'test',
             message: 'What command should be run to run tests?',
           },
           {
             type: 'input',
-            name: 'repoInfo',
+            name: 'usage',
             message: 'What does the user need to know about using the repo?',
           },
           {
             type: 'input',
-            name: 'question3',
+            name: 'contributing',
             message: 'What does the user need to know about contributing to the repo?',
           },
+        ]
 
-    ])
+// // TODO: Create a function to write README file
+// function writeToFile(fileName, data) {
+//   fs.writeFile(fileName, data), (err) =>
+//   err? console.error(err) : console.log("README.md was successfully created!")
+// };
+
+function writeToFile(fileName, data){
+  return fs.writeFileSync(path.join(process.cwd(), fileName), data)
 }
 
+// TODO: Create a function to initialize app
+// function init() {}
+//
+function init() { 
+  inquirer.prompt(questions).then((inquirerResponses) => {
+      console.log('Generating README...');
+      writeToFile('README.md', generateMarkdown({ ...inquirerResponses }));
+  });
+}
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-  fs.writeFile(fileName, data), (err) =>
-  err? console.error(err) : console.log("README.md successfully created!")
+// Function call to initialize app
+init();
+//
 
-};
+
 //
 // const writeToFile = ({username, email, projectName, license, question1, question2, repoInfo, question3 }) =>
 //     `# ${projectName}
@@ -103,18 +118,3 @@ function writeToFile(fileName, data) {
 
 
 //     `
-
-// TODO: Create a function to initialize app
-// function init() {}
-//
-const init = () => {
-    questions()
-    .then((answers) => writeFile('./README.md', writeToFile(answers)))
-    const markdown = generateMarkdown(answers); 
-    writeToFile('README.md', markdown)
-    .catch((err) => console.error(err));
-}
-
-// Function call to initialize app
-init();
-//
