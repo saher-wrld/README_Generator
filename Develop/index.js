@@ -18,7 +18,7 @@ const questions = [
           {
             type: 'input',
             name: 'email',
-            message: 'What is your email address',
+            message: 'What is your email address?',
           },
           {
             type: 'input',
@@ -28,7 +28,7 @@ const questions = [
           {
             type: 'input',
             name: 'description',
-            message: 'Please write a short description of your project',
+            message: 'Please write a short description of your project:',
           },
           {
             type: 'list',
