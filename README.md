@@ -19,9 +19,9 @@ node index.js
 - Node.js
 
 ## Instructions
-Use the command provided above (node.index.js). The terminal promt the uder a series of questions about their project to generate a professional README. 
+Use the command provided above (node index.js). The terminal will prompt the uerr a series of questions about their project to generate a professional README. 
 
-![alt text](./Pictures.Iinstrctions.pdf)
+![alt text](./Pictures.Instrctions.pdf)
 
 
 ## Links
