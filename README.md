@@ -27,5 +27,7 @@ Use the command provided above (node index.js). The terminal will prompt the uer
 ## Links
 
 * [GitHub Repository](https://github.com/saher-wrld/challange-07)
-* [Video](https://drive.google.com/file/d/1ezPwPbMdMUjY7lAqfo6H5tr-L_3MgBX5/view)
+* [Video Generating](https://drive.google.com/file/d/1ezPwPbMdMUjY7lAqfo6H5tr-L_3MgBX5/view)
+* [Video Links](https://drive.google.com/file/d/1E7Hv1uAfIGLvLSeQVYsMLDAb5GC1W2jJ/view)
+  
 
