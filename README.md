@@ -21,8 +21,11 @@ node index.js
 ## Instructions
 Use the command provided above (node index.js). The terminal will prompt the uerr a series of questions about their project to generate a professional README. 
 
-![alt text](./Pictures.Instrctions.pdf)
+![alt text](./Pictures/Instructions.png)
 
 
 ## Links
+
+* [GitHub Repository](https://github.com/saher-wrld/challange-07)
+* [Video](https://drive.google.com/file/d/1ezPwPbMdMUjY7lAqfo6H5tr-L_3MgBX5/view)
 
