@@ -1,5 +1,5 @@
 # README Generator 
-Creating a READMe file
+
 
 ## Description
 Having a high-quality README is essential when launching an open-source project. It should clearly explain the purpose of the app, provide usage instructions, outline installation steps, describe how to report issues, and guide potential contributors on how to get involved. Including a section on contributions is particularly important, as it encourages other developers to help make the project more successful. 
