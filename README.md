@@ -10,7 +10,9 @@ Your task is to build a command-line application that uses the Inquirer package 
 
 The application can be run with the following command:
 
-
+```bash
+node index.js
+```
 
 ## Technologies Used 
 - JavaScript
