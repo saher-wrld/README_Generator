@@ -21,7 +21,7 @@ node index.js
 ## Instructions
 Use the command provided above (node index.js). The terminal will prompt the uerr a series of questions about their project to generate a professional README. 
 
-![alt text](./Pictures/Instructions.png)
+![Instructions](Instructions.png)
 
 
 ## Links
