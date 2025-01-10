@@ -40,11 +40,13 @@ const questions = [
             type: 'input',
             name: 'installation',
             message: 'What command should be run to install dependencies?',
+            default: 'npm i',
           },
           {
             type: 'input',
             name: 'test',
             message: 'What command should be run to run tests?',
+            default: 'npm test',
           },
           {
             type: 'input',
